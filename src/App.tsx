@@ -63,16 +63,18 @@ function App() {
   }, []);
 
   return (
-    <div>
-      <MainCard />
-      <Separator />
-      <div className='items-start flex'>
-        <div className="mt-4 text-4xl font-bold">
-          Projects
+    <div className="relative w-full">
+      <div className="mx-auto max-w-7xl px-4">
+        <MainCard />
+        <Separator />
+        <div className='items-start flex'>
+          <div className="mt-4 text-4xl font-bold">
+            Projects
+          </div>
         </div>
-      </div>
-      <div className='grid grid-cols-3 gap-8 mt-4 justify-between'>
-        <ProjectCards items={projects} />
+        <div className='grid grid-cols-3 gap-8 mt-4 justify-between'>
+          <ProjectCards items={projects} />
+        </div>
       </div>
     </div>
   )
